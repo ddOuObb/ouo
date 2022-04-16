@@ -12,8 +12,7 @@ import requests
 from pprint import pprint
 
 TOKEN = os.environ['TOKEN']
-SRCLanguage=os.environ['SRC']
-DSTLanguage=os.environ['DST']
+
 
 intents =discord.Intents.default()
 intents.members = True
