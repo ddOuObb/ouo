@@ -85,7 +85,7 @@ async def on_message(message):
         elif e == 100:
             emoji = client.get_emoji(894245845912932392)
             w = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQmyYAyp_0RMIGlTminHKZicqeVzz8jLEXu3fGHEa7T4lL6YBwnmWrSJBRqC4YqLzRSA&usqp=CAU"
-        await message.channel.send('{0} 歐氣指數:{1:3d}{2}'.format(mention,e,emoji))
+        await message.channel.send('{0} 歐氣指數:{1:3d}'.format(mention,e))
         await message.channel.send(w)
 
     if message.content == "+日期":
