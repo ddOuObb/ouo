@@ -123,7 +123,7 @@ async def on_message(message):
                         await message.channel.send(item.get("src"))
                         await asyncio.sleep(1)
 
-        if message.content == "bot狐你不乖":
+        if message.content == "bot OuO你不乖":
             await message.channel.send('https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1580208626048.jpg')
 
 
