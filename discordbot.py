@@ -54,9 +54,9 @@ async def on_message(message):
     if '裸男' and '請客' in message.content:
         await message.channel.send('yabe 裸男請客')
 
-    if message.content.startswith('+神奇bot'):
+    if message.content.startswith('+神奇海螺'):
         mention = message.author.mention
-        meg = ["Yes!","No!","窩才不告訴你勒","阿這"]
+        meg = ["Yes!","No!"]
         random_word = random.choice(meg)
         await message.channel.send(f'{mention} {random_word}')
 
