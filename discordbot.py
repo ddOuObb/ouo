@@ -46,7 +46,7 @@ async def on_message(message):
         await message.channel.send('Good morning 祝你今天順利')
 
     if '午安' in message.content:
-        await message.channel.send('甲霸沒')
+        await message.channel.send('午安')
 
     if '晚安' in message.content:
         await message.channel.send('Good night 祝你有個好夢')
