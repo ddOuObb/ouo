@@ -122,19 +122,6 @@ async def on_message(message):
                         item = soup.find("img",id = "image")
                         await message.channel.send(item.get("src"))
                         await asyncio.sleep(1)
-            
-        if message.content.startswith('+車車'):
-            tmp = message.content.split(" ",2)
-            if len(tmp) == 1:
-                await message.channel.send("不給車號怎麼開")
-            else:
-                input_image = tmp[1]
-                response = requests.get(f"https://nhentai.net/g/{input_image}/")
-                soup = BeautifulSoup(response.text, 'html.parser')
-                result = soup.find_all("img",class_="lazyload")
-                for title in result:
-                    await message.channel.send(title.get("data-src"))
-                    await asyncio.sleep(1)
 
         if message.content == "bot狐你不乖":
             await message.channel.send('https://memeprod.sgp1.digitaloceanspaces.com/user-wtf/1580208626048.jpg')
