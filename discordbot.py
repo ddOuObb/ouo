@@ -51,8 +51,11 @@ async def on_message(message):
     if '晚安' in message.content:
         await message.channel.send('Good night 祝你有個好夢')
 
-    if '裸男' and '請客' in message.content:
-        await message.channel.send('yabe 裸男請客')
+    if '你好' in message.content:
+        await message.channel.send('你好呀')
+    
+    if 'Hi' in message.content:
+        await message.channel.send('看不懂英文啦淦')
 
     if message.content.startswith('+神奇海螺'):
         mention = message.author.mention
