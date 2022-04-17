@@ -56,6 +56,9 @@ async def on_message(message):
     
     if 'Hi' in message.content:
         await message.channel.send('看不懂英文啦淦')
+    
+    if '報告結束囉 OuO機器人想對大家說' in message.content:
+        await message.channel.send('感謝觀看 謝謝大家')
 
     if message.content.startswith('+神奇海螺'):
         mention = message.author.mention
